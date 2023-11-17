@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Il Tuo Nome - Sito Personale</title>
-    <!-- Collegamento con Bootstrap CSS -->
+    <title>Il Tuo Nome</title>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Stile personalizzato -->
+
+    <!-- Stili personalizzati -->
     <style>
         body {
             background-image: url('sfondo.jpg'); /* Inserisci il percorso dell'immagine di sfondo */
@@ -17,44 +18,53 @@
             padding: 50px;
         }
 
-        h1, h2, h3, p {
-            color: #fed136; /* Colore del testo per i titoli e i paragrafi */
+        .description {
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
         .social-icons a {
-            color: #ffffff; /* Colore dei link dei social network */
+            color: #ffffff; /* Colore dei collegamenti ai social network */
             margin-right: 15px;
-            font-size: 24px;
         }
 
-        #cv-link {
-            color: #fed136; /* Colore del link del curriculum vitae */
+        #resume-upload {
+            margin-top: 20px;
         }
     </style>
 </head>
-
 <body>
+
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <h1>Il Tuo Nome</h1>
-                <h2>Web Developer</h2>
-                <p>Benvenuto nel mio sito personale! Sono un appassionato sviluppatore web con competenze in HTML, CSS, JavaScript e altri framework moderni.</p>
+                <p class="description">Benvenuto sulla mia pagina personale! Sono un esperto nel campo X con una passione per Y. Sono appassionato di Z e sono sempre alla ricerca di nuove sfide e opportunità.</p>
+
                 <div class="social-icons">
-                    <!-- Inserisci i tuoi link ai social network -->
                     <a href="https://www.linkedin.com/in/tuonome" target="_blank">LinkedIn</a>
-                    <a href="https://api.whatsapp.com/send?phone=3762232892" target="_blank">WhatsApp</a>
-                    <a href="kamus.acquario@proton.me" target="_blank">Email</a>
+                    <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+                    <a href="mailto:tuonome@email.com" target="_blank">E-mail</a>
                 </div>
-                <a id="cv-link" href="cv.pdf" target="_blank">Scarica il mio Curriculum Vitae (PDF)</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <form enctype="multipart/form-data" action="upload.php" method="POST">
+                    <div class="form-group">
+                        <label for="resume-upload">Carica il Curriculum Vitae (PDF):</label>
+                        <input type="file" class="form-control-file" id="resume-upload" name="resume">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Carica</button>
+                </form>
             </div>
         </div>
     </div>
 
-    <!-- Collegamento con Bootstrap JS e jQuery (assicurati di includerli dopo il corpo della pagina) -->
+    <!-- Bootstrap JS e script -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
-
