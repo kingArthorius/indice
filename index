@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Il Tuo Nome - Sito Personale</title>
+    <!-- Collegamento con Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Stile personalizzato -->
+    <style>
+        body {
+            background-image: url('sfondo.jpg'); /* Inserisci il percorso dell'immagine di sfondo */
+            background-size: cover;
+            color: #ffffff; /* Colore del testo */
+            font-family: 'Arial', sans-serif; /* Carattere del testo */
+            padding: 50px;
+        }
+
+        h1, h2, h3, p {
+            color: #fed136; /* Colore del testo per i titoli e i paragrafi */
+        }
+
+        .social-icons a {
+            color: #ffffff; /* Colore dei link dei social network */
+            margin-right: 15px;
+            font-size: 24px;
+        }
+
+        #cv-link {
+            color: #fed136; /* Colore del link del curriculum vitae */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Il Tuo Nome</h1>
+                <h2>Web Developer</h2>
+                <p>Benvenuto nel mio sito personale! Sono un appassionato sviluppatore web con competenze in HTML, CSS, JavaScript e altri framework moderni.</p>
+                <div class="social-icons">
+                    <!-- Inserisci i tuoi link ai social network -->
+                    <a href="https://www.linkedin.com/in/tuonome" target="_blank">LinkedIn</a>
+                    <a href="https://api.whatsapp.com/send?phone=3762232892" target="_blank">WhatsApp</a>
+                    <a href="kamus.acquario@proton.me" target="_blank">Email</a>
+                </div>
+                <a id="cv-link" href="cv.pdf" target="_blank">Scarica il mio Curriculum Vitae (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collegamento con Bootstrap JS e jQuery (assicurati di includerli dopo il corpo della pagina) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
 
